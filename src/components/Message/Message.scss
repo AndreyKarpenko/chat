@@ -1,0 +1,70 @@
+@import '~styles/variables';
+
+.message {
+  $self: &;
+
+  margin: 30px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  &__avatar {
+    margin: 0 25px;
+
+    img {
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  &__content {
+    max-width: 50%;
+  }
+
+  &__bubble {
+    border-radius: 20px 20px 20px 0;
+    width: fit-content;
+    padding: 20px;
+    background-color: $blue;
+    box-shadow: 0 5px 5px rgba(54, 116, 255, 0.2);
+    margin-bottom: 15px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+
+  &__text {
+    color: white;
+    margin: 0;
+  }
+
+  &__date {
+    font-size: 12px;
+    opacity: 0.4;
+  }
+
+  &--isme {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    #{$self}__bubble {
+      border: $blue 1px solid;
+      border-radius: 20px 20px 0 20px;
+      background-color: white;
+    }
+    #{$self}__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    #{$self}__text {
+      color: $blue;
+    }
+    #{$self}__info {
+      flex-direction: row-reverse;
+    }
+  }
+}
