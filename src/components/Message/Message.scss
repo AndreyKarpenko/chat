@@ -68,3 +68,10 @@
     }
   }
 }
+
+.spectrum__wrapper {
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}

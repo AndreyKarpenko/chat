@@ -6,7 +6,7 @@ const Home = () => {
     <section className='home'>
       <Message
         avatar='https://sun6-14.userapi.com/c857424/v857424264/f869e/zEGXGUZNSNI.jpg?ava=1'
-        text='Салам, Брут!'
+        text='Hello, World!'
         date={new Date('Mon Feb 03 2020 12:40:11')}
         isMe={false}
         isRead={true}
